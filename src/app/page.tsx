@@ -12,7 +12,7 @@ const page = () => {
       <div className='h-screen max-w-7xl mx-auto flex items-center justify-center'>
         <Testimonials />
       </div>
-      <div>
+      <div className=''>
         <Features />
       </div>
       <div className='h-screen max-w-7xl mx-auto flex items-center justify-center'>
