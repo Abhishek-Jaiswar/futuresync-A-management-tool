@@ -7,6 +7,7 @@ const TopCompanies = () => {
 
     return (
         <div className='overflow-hidden'>
+            <h1 className='text-3xl text-gray-300 font-bold text-center py-8 capitalize'>Top Under-rated questions from these companies</h1>
             <ul className='flex gap-5 animate-scroll-infinite whitespace-nowrap'>
                 {doubledCompanies.map((item, index) => (
                     <li key={index} className='flex items-center justify-center gap-2'>
