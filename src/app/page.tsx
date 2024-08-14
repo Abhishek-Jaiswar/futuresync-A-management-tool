@@ -25,16 +25,17 @@ const page = () => {
       <div className='mx-auto max-w-7xl'>
         <Features />
       </div>
-      <div className='mx-auto max-w-7xl pt-40'>
-        <Resources />
-      </div>
-      <div className=' lg:h-screen pt-16 max-w-7xl mx-auto flex flex-col items-center justify-center'>
-        <div className='py-24'>
-          <h1 className=' text-center text-2xl text-gray-200 font-bold capitalize'>
-            You are in good hands, see what students says
+      <div className='pt-16 max-w-7xl mx-auto flex flex-col items-center justify-center'>
+        <div className='py-8'>
+          <h1 className=' text-center text-5xl text-gray-200 font-bold capitalize'>
+            You're in good company
           </h1>
+          <p className='text-center py-5'>Have a look our happy users</p>
         </div>
         <Testimonials />
+      </div>
+      <div className='mx-auto max-w-7xl pt-40'>
+        <Resources />
       </div>
     </div>
   )

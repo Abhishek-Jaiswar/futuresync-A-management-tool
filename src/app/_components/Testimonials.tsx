@@ -3,7 +3,7 @@ import { testimonials } from '../utils/testimonialData';
 
 const Testimonials = () => {
   return (
-    <div className='columns-1 sm:columns-2 lg:columns-3 space-y-4 lg:gap-4 p-4 lg:p-0'>
+    <div className='columns-1 sm:columns-2 lg:columns-3 space-y-4 lg:gap-4 lg:p-0'>
       {testimonials && testimonials.length > 0 && testimonials.map((item: any) => (
         <div key={item.id} className='bg-zinc-900/40 break-inside-avoid rounded-md p-8 border border-gray-500/30'>
           <div className="py-2 flex items-center justify-start gap-2">

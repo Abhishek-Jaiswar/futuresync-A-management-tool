@@ -48,7 +48,7 @@ export const resources = [
       `,
       author: {
         name: "Alex Johnson",
-        date: "18/06/2024",
+        date: "july 23, 2024",
         duration: "8 min read"
       }
     },
