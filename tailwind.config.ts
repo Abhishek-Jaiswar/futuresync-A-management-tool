@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
 
 import svgToDataUri from "mini-svg-data-uri";
- 
+
 import colors from "tailwindcss/colors";
 // @ts-ignore
 import flattenColorPalette from 'tailwindcss/lib/util/flattenColorPalette';
@@ -23,15 +23,24 @@ const config: Config = {
       keyframes: {
         scroll: {
           from: {
-            transform: 'translateX(0)'
+            left: 'translateX(0)',
           },
           to: {
-            transform: 'translateX(-100vw)'
+            transform: 'translateX(-100%)',
           },
-        }
-      },    
+        },
+        reverseScroll: {
+          from: {
+            transform: 'translateX(-100vw)',
+          },
+          to: {
+            transform: 'translateX(0%)',
+          },
+        },
+      },
       animation: {
-        'scroll-infinite': 'scroll 40s linear infinite'
+        'scroll-infinite': 'scroll 40s linear infinite',
+        'reverse-scroll-infinite': 'reverseScroll 40s linear infinite',  // Corrected reference to 'reverseScroll'
       },
     },
   },
@@ -61,7 +70,7 @@ const config: Config = {
     },
   ],
 };
- 
+
 function addVariablesForColors({ addBase, theme }: any) {
   let allColors = flattenColorPalette(theme("colors"));
   let newVars = Object.fromEntries(

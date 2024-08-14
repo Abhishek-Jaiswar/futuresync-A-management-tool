@@ -18,7 +18,7 @@ const page = () => {
       <div className=' flex items-center justify-center -mt-28'>
         <Hero />
       </div>
-      <div className='mx-auto max-w-7xl pb-36 px-4 lg:px-0 '>
+      <div className='pb-36 px-4 lg:px-0 '>
         <TopCompanies />
       </div>
       <div className='mx-auto max-w-7xl'>
