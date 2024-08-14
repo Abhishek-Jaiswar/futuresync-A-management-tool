@@ -39,8 +39,8 @@ const config: Config = {
         },
       },
       animation: {
-        'scroll-infinite': 'scroll 40s linear infinite',
-        'reverse-scroll-infinite': 'reverseScroll 40s linear infinite',  // Corrected reference to 'reverseScroll'
+        'scroll-infinite': 'scroll 30s linear infinite',
+        'reverse-scroll-infinite': 'reverseScroll 30s linear infinite',  // Corrected reference to 'reverseScroll'
       },
     },
   },

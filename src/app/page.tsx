@@ -9,16 +9,16 @@ import HeroText from './_components/HeroText'
 const page = () => {
   return (
     <div className='' >
-      <div className='mx-auto max-w-7xl'>
+      <div className=' z-50 border-b border-slate-900 sticky top-0 left-0 bg-slate-950'>
         <Navbar />
       </div>
-      <div className='mx-auto max-w-7xl pt-40'>
+      <div className='mx-auto max-w-7xl pt-20 lg:pt-40'>
         <HeroText />
       </div>
-      <div className=' flex items-center justify-center -mt-28'>
+      <div className=' flex items-center justify-center -mt-2 lg:-mt-28'>
         <Hero />
       </div>
-      <div className='pb-36 px-4 lg:px-0 '>
+      <div className='lg:pb-36 pb-10 px-2 lg:px-0'>
         <TopCompanies />
       </div>
       <div className='mx-auto max-w-7xl'>
