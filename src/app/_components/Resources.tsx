@@ -11,7 +11,7 @@ const Resources = () => {
         <p className='text-md text-slate-300 text-center py-4'>Resources that can help you to bypass the interviews</p>
       </div>
       <div className=' mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10 '>
-        {resources && resources.length > 0 && resources.slice(0,6).map((items) => (
+        {resources && resources.length > 0 && resources.slice(0, 6).map((items) => (
           <div key={items.id} className=''>
             <div className='w-auto overflow-hidden h-auto bg-gradient-to-r from-purple-300 to-orange-300 p-[1px] rounded-lg cursor-pointer'>
               <Image
@@ -32,7 +32,7 @@ const Resources = () => {
               <p className='text-sm text-slate-400'>{items.description.slice(0, 80)}</p>
             </div>
             <div className='py-4 flex items-start justify-start gap-4'>
-              <div className=' h-12 w-12 flex items-center justify-center text-lg bg-slate-800/55 rounded-full'>{items.author.name.slice(0,1)}</div>
+              <div className=' h-12 w-12 flex items-center justify-center text-lg bg-slate-800/55 rounded-full'>{items.author.name.slice(0, 1)}</div>
               <div>
                 <h1 className='text-md text-slate-100 font-bold'>{items.author.name}</h1>
                 <div className='flex items-center justify-center gap-2'>
