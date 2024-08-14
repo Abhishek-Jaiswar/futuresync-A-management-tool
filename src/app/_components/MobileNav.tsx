@@ -1,27 +1,29 @@
 import React from 'react'
 
-const MobileNav = () => {
+interface MobileNavType {
+    active: boolean
+}
+
+const MobileNav: React.FC<MobileNavType> = ({ active }) => {
     const links = ["Home", "About", 'Pricing', "Features", "Use Case"]
     return (
-        <div className='flex items-center py-3'>
-            <div className='pr-10'>
-                <h1 className="text-3xl font-bold bg-gradient-to-r from-violet-400 to bg-orange-300 bg-clip-text text-transparent">
-                    Knox-Ai
-                </h1>
-            </div>
-            <div className=' flex-1'>
-                <ul className='flex items-center justify-start gap-10'>
+        <div
+            className={`lg:hidden md:hidden sm:hidden absolute w-full h-[100vh] z-50 top-[3.1rem] left-0 flex flex-col p-8 bg-slate-950 transition-all duration-700 ${active ? " -translate-y-[50rem]" : "translate-y-0"
+                } -z-50 border-t border-slate-900`}
+        >
+            <div className=''>
+                <ul className='flex flex-col items-start justify-center gap-10'>
                     {links.map((item, i) => (
                         <li key={i}>{item}</li>
                     ))}
                 </ul>
             </div>
             <div >
-                <div className='flex items-center justify-center gap-4'>
-                    <button className='px-4 py-2 border border-slate-600 rounded-full hover:text-slate-300'>
+                <div className='flex flex-col w-full items-start justify-center gap-6 mt-9'>
+                    <button className='px-4 py-2 w-full border border-slate-600 rounded-full hover:text-slate-300'>
                         View Docs
                     </button>
-                    <button className=' px-4 py-2 bg-gray-300 text-black rounded-full flex items-center justify-center gap-2 hover:bg-gray-200'>
+                    <button className=' px-4 py-2 w-full bg-gray-300 text-black rounded-full flex items-center justify-center gap-2 hover:bg-gray-200'>
                         Sign up
                     </button>
                 </div>

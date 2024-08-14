@@ -5,6 +5,7 @@ import TopCompanies from './_components/TopCompanies'
 import Navbar from './_components/Navbar'
 import Hero from './_components/Hero'
 import HeroText from './_components/HeroText'
+import Resources from './_components/Resources'
 
 const page = () => {
   return (
@@ -23,6 +24,9 @@ const page = () => {
       </div>
       <div className='mx-auto max-w-7xl'>
         <Features />
+      </div>
+      <div className='mx-auto max-w-7xl pt-40'>
+        <Resources />
       </div>
       <div className=' lg:h-screen pt-16 max-w-7xl mx-auto flex flex-col items-center justify-center'>
         <div className='py-24'>
