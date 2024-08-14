@@ -4,6 +4,7 @@ import Features from './_components/Features'
 import TopCompanies from './_components/TopCompanies'
 import Navbar from './_components/Navbar'
 import Hero from './_components/Hero'
+import HeroText from './_components/HeroText'
 
 const page = () => {
   return (
@@ -11,10 +12,13 @@ const page = () => {
       <div className='mx-auto max-w-7xl'>
         <Navbar />
       </div>
-      <div className=' flex items-center justify-center'>
+      <div className='mx-auto max-w-7xl pt-40'>
+        <HeroText />
+      </div>
+      <div className=' flex items-center justify-center -mt-28'>
         <Hero />
       </div>
-      <div className='mx-auto max-w-7xl py-36 px-4 lg:px-0'>
+      <div className='mx-auto max-w-7xl pb-36 px-4 lg:px-0 '>
         <TopCompanies />
       </div>
       <div className='mx-auto max-w-7xl'>
