@@ -28,7 +28,7 @@ const page = () => {
       <div className='pt-16 max-w-7xl mx-auto flex flex-col items-center justify-center'>
         <div className='py-8'>
           <h1 className=' text-center text-5xl text-gray-200 font-bold capitalize'>
-            You're in good company
+            You are in good company
           </h1>
           <p className='text-center py-5'>Have a look our happy users</p>
         </div>
