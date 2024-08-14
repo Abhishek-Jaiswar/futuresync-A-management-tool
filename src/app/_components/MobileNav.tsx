@@ -8,7 +8,7 @@ const MobileNav: React.FC<MobileNavType> = ({ active }) => {
     const links = ["Home", "About", 'Pricing', "Features", "Use Case"]
     return (
         <div
-            className={`lg:hidden md:hidden sm:hidden absolute w-full h-[100vh] top-[3.1rem] left-0 flex flex-col p-8 bg-slate-950 transition-all duration-700 ${active ? " -translate-y-[50rem]" : "translate-y-0"
+            className={`lg:hidden md:hidden sm:hidden absolute w-full h-[100vh] top-[3.1rem] left-0 flex flex-col p-8 bg-slate-950 transition-all duration-700 ${active ? " -translate-y-[80rem]" : "translate-y-0"
                 } border-t border-slate-900`}
         >
             <div className=''>
