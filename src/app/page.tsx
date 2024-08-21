@@ -7,6 +7,8 @@ import Hero from './_components/Hero'
 import HeroText from './_components/HeroText'
 import Resources from './_components/Resources'
 import Pricing from './_components/Pricing'
+import { AccordionDemo } from './_components/Accordian'
+import Footer from './_components/Footer'
 
 const page = () => {
   return (
@@ -27,19 +29,25 @@ const page = () => {
         <Features />
       </div>
       <div className='pt-8 max-w-7xl mx-auto flex flex-col items-center justify-center'>
-        <div className='py-8 w-[65%]'>
-          <h1 className=' bg-gradient-to-r from-violet-400 to-orange-300 bg-clip-text text-transparent text-center text-2xl lg:text-5xl md:text-4xl font-bold capitalize '>
+        <div className='py-8 pb-2 w-full lg:w-[65%] p-4'>
+          <h1 className=' bg-gradient-to-r from-violet-400 to-orange-300 bg-clip-text text-transparent text-center text-2xl lg:text-4xl md:text-4xl font-bold capitalize '>
             You&apos;re in the right place for your interview journey!
           </h1>
-          <p className='text-center py-5'>Have a look our happy users</p>
+          <p className='text-sm lg:text-base text-center w-full lg:w-[80%] mx-auto py-2 md:py-3 lg:py-5 text-slate-300'>See what our happy users are saying! Discover how our service has made a difference for them.</p>
         </div>
         <Testimonials />
       </div>
-      <div className='mx-auto max-w-7xl pt-40'>
+      <div className='mx-auto max-w-7xl pt-12'>
         <Resources />
       </div>
-      <div className='mx-auto max-w-7xl pt-40'>
+      <div className='mx-auto max-w-7xl pt-8'>
         <Pricing />
+      </div>
+      <div className='mx-auto max-w-7xl pt-12'>
+        <AccordionDemo />
+      </div>
+      <div className=' pt-12'>
+        <Footer />
       </div>
       
     </div>

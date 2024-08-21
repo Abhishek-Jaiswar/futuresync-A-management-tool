@@ -5,10 +5,12 @@ import Image from 'next/image'
 const Resources = () => {
 
   return (
-    <div className='flex items-center justify-center flex-col px-2'>
-      <div className=' flex items-center justify-center flex-col'>
-        <h1 className='text-3xl lg:text-5xl text-center font-bold text-slate-200'>Checkout our latest posts</h1>
-        <p className='text-md text-slate-300 text-center py-4'>Resources that can help you to bypass the interviews</p>
+    <div className='flex items-center justify-center flex-col p-4'>
+      <div className='w-full lg:w-[65%]'>
+        <h1 className=' bg-gradient-to-r from-violet-400 to-orange-300 bg-clip-text text-transparent text-center text-2xl lg:text-4xl md:text-4xl font-bold capitalize '>
+        Explore these blogs to accelerate your learning and growth!
+        </h1>
+        <p className='text-sm md:text-base text-slate-400 text-center py-4'>Discover top blogs that provide valuable insights and tips to enhance your skills and advance your knowledge.</p>
       </div>
       <div className=' mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10 '>
         {resources && resources.length > 0 && resources.slice(0, 6).map((items) => (

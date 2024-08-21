@@ -8,21 +8,21 @@ const Features = () => {
   return (
     <div className='flex flex-col md:flex-row items-center md:items-start justify-between lg:gap-28 md:gap-10 gap-5 lg:p-8'>
       <div className='w-full p-4 md:w-1/2 md:sticky md:top-[15rem] md:left-0 flex flex-col items-center md:items-start'>
-        <div className='flex flex-col gap-5 text-center md:text-left'>
+        <div className='flex flex-col gap-2 text-center md:text-left'>
           <div>
             <h1 className='relative text-2xl md:text-4xl lg:text-5xl bg-clip-text text-transparent bg-gradient-to-b from-orange-200 to-violet-500 font-sans font-bold'>
               Unlock Your Interview Success
               <span className='bg-gradient-to-r from-violet-400 to-orange-300 bg-clip-text text-transparent'>
-                with AI Precision
+                {" "}with AI Precision
               </span>
             </h1>
           </div>
           <div>
-            <p className='text-sm md:text-md font-semibold text-slate-300'>
+            <p className='text-sm lg:text-md font-semibold text-slate-300'>
               Get ready for interviews with our AI-powered platform. Receive personalized feedback, real-time practice, and progress analytics to refine your skills and boost your confidence for any interview.
             </p>
           </div>
-          <div className='flex items-center justify-center md:justify-start gap-6'>
+          <div className='flex items-center justify-center md:justify-start gap-6 mt-4'>
             <button className='px-4 md:px-6 py-2 md:py-3 border border-slate-600 rounded-full hover:text-slate-300'>
               Learn More
             </button>

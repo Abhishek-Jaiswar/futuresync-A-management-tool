@@ -10,7 +10,7 @@ const HeroText = () => {
       </div>
 
       <div className="w-full max-w-4xl mx-auto px-4 py-4 md:py-6">
-        <p className="text-sm md:text-md lg:text-lg text-slate-500 text-center">
+        <p className="text-sm md:text-base lg:text-lg text-slate-400 text-center">
           Simulate your most favorable interview of top-tier companies
         </p>
       </div>
