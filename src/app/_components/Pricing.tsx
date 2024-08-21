@@ -4,16 +4,16 @@ import { pricingPlans } from '../utils/pricingData';
 
 const Pricing = () => {
     return (
-        <div className='flex items-center justify-center flex-col gap-14 p-4' >
-            <div className='flex items-center justify-center flex-col gap-5'>
+        <div className='flex items-center justify-center flex-col gap-8 md:gap-14 p-4' >
+            <div className='flex items-center justify-center flex-col gap-2 md:gap-5'>
                 <div className=''>
                     <h1 className=' text-2xl text-center lg:text-4xl bg-gradient-to-r from-violet-400 to bg-orange-300 bg-clip-text text-transparent font-bold capitalize'>Smart tech with smart pricing.</h1>
                 </div>
                 <div>
-                    <p className='text-base text-center text-slate-400'>Commit to a year, and watch your savings grow with our exclusive rates!</p>
+                    <p className='text-sm md:text-base text-center px-4 text-slate-400'>Commit to a year, and watch your savings grow with our exclusive rates!</p>
                 </div>
             </div>
-            <div className=' grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-14'>
+            <div className=' grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4 md:gap-14'>
                 {pricingPlans.map((items) => (
                     <div key={items.name} className='border border-violet-500/20 rounded-lg p-5 flex flex-col gap-3'>
                         <div>
