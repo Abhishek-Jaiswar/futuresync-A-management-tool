@@ -10,7 +10,7 @@ const TopCompanies = () => {
         <div className='  -z-50 relative flex flex-col items-center justify-center gap-3 lg:gap-6'>
             {/* Heading Section */}
             <div className='w-full max-w-4xl'>
-                <h1 className='text-xl sm:text-2xl md:text-3xl lg:text-4xl text-gray-300 font-bold text-center py-1 capitalize'>
+                <h1 className='text-2xl sm:text-2xl md:text-3xl lg:text-4xl text-gray-300 font-bold text-center py-1 capitalize'>
                     Top <span className='bg-gradient-to-r from-violet-400 to-orange-300 bg-clip-text text-transparent'>Under-rated questions</span> from these companies
                 </h1>
                 <p className='text-sm sm:text-md md:text-lg text-slate-400 py-1 text-center mx-auto max-w-xl'>

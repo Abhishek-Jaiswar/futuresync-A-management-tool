@@ -1,12 +1,12 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { RxCross2 } from "react-icons/rx";
 import { MdMenu } from 'react-icons/md'
 import MobileNav from './MobileNav';
 
 const Navbar = () => {
 
-    const [active, setActive] = useState(true)
+    const [active, setActive] = useState(true);
 
     const handleMenu = () => {
         setActive(prev => !prev)

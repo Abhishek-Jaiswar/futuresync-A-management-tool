@@ -6,6 +6,7 @@ import Navbar from './_components/Navbar'
 import Hero from './_components/Hero'
 import HeroText from './_components/HeroText'
 import Resources from './_components/Resources'
+import Pricing from './_components/Pricing'
 
 const page = () => {
   return (
@@ -25,10 +26,10 @@ const page = () => {
       <div className='mx-auto max-w-7xl'>
         <Features />
       </div>
-      <div className='pt-16 max-w-7xl mx-auto flex flex-col items-center justify-center'>
-        <div className='py-8'>
-          <h1 className=' text-center text-5xl text-gray-200 font-bold capitalize'>
-            You are in good company
+      <div className='pt-8 max-w-7xl mx-auto flex flex-col items-center justify-center'>
+        <div className='py-8 w-[65%]'>
+          <h1 className=' bg-gradient-to-r from-violet-400 to-orange-300 bg-clip-text text-transparent text-center text-2xl lg:text-5xl md:text-4xl font-bold capitalize '>
+            You&apos;re in the right place for your interview journey!
           </h1>
           <p className='text-center py-5'>Have a look our happy users</p>
         </div>
@@ -37,6 +38,10 @@ const page = () => {
       <div className='mx-auto max-w-7xl pt-40'>
         <Resources />
       </div>
+      <div className='mx-auto max-w-7xl pt-40'>
+        <Pricing />
+      </div>
+      
     </div>
   )
 }
