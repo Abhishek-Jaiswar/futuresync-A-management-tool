@@ -21,7 +21,7 @@ const TopCompanies = () => {
             <div className='w-full max-w-full lg:max-w-7xl overflow-hidden mx-auto relative'>
                 <div className="absolute left-0 top-0 bottom-0 w-12 sm:w-16 md:w-20 lg:w-24 bg-gradient-to-r from-slate-950 to-transparent pointer-events-none z-10"></div>
 
-                <ul className='flex gap-2 lg:gap-5 animate-scroll-infinite'>
+                <ul className='flex gap-2 lg:gap-5 animate-scroll-left-to-right'>
                     {doubledCompanies.map((item, index) => (
                         <li key={index} className='px-2 py-1.5 lg:px-6 lg:py-3 border rounded-md border-slate-400 flex items-center justify-center gap-2'>
                             <span><IconComponent logo={item.logo} color={item.color} className="text-2xl sm:text-3xl" /></span>
@@ -34,7 +34,7 @@ const TopCompanies = () => {
 
             <div className='w-full max-w-full lg:max-w-7xl overflow-hidden mx-auto relative'>
                 <div className="absolute left-0 top-0 bottom-0 w-12 sm:w-16 md:w-20 lg:w-24 bg-gradient-to-r from-slate-950 to-transparent pointer-events-none z-10"></div>
-                <ul className='flex gap-2 lg:gap-5 animate-reverse-scroll-infinite'>
+                <ul className='flex gap-2 lg:gap-5 animate-scroll-right-to-left'>
                     {doubledCompanies.map((item, index) => (
                         <li key={index} className='px-2 py-1.5 lg:px-6 lg:py-3 border border-slate-400 rounded-md flex items-center justify-center gap-2'>
                             <span className=' '>
